@@ -1,0 +1,1 @@
+You may wanna use this on web server, otherwise it'll show you nothing. You can fix this by editing path names inside the htmls.

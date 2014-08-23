@@ -1,0 +1,25 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<polymer-element name="small-news" attributes="link src title desc">
+<template>
+<a href="{{link}}" style="color: #FFF; text-decoration: none;">
+    <div style="height: 100px;width: 300px;background: #000000;">
+      <img src="{{src}}" style="background: #BBB;height: 100px;width: auto;float: left;">
+      <div style="padding: 10px;padding-left: 110px;color: #FFFFFF;text-align: justify; font-size: 12px;">
+        <span>{{title}}</span>
+        <p style="margin: 0px;">{{desc}}</p>
+      </div>
+    </div>
+  </a>
+</template>
+<script>
+  Polymer('small-news', {
+      // These default values are overridden
+      // by the user's attribute values.
+      link: "#",
+      src: "",
+      title: "placeholder",
+      desc: "placeholder"
+    });
+  </script>
+</polymer-element>
